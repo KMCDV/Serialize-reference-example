@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d5fe94784468fb4fb580990d5c824bb, type: 3}
-  m_Name: Heavy
+  m_Name: HitHardAndLight
   m_EditorClassIdentifier: 
-  cardName: Heavy
+  cardName: 
   damage: 10
-  infantryType: 7
+  infantryType: 0
   cardEffects:
+  - {fileID: 0}
   - {fileID: 0}

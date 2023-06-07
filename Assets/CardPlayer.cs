@@ -10,9 +10,10 @@ public class CardPlayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        foreach(CardEffect cardEffect in card.cardEffects)
+        foreach(CardEffect1 cardEffect in card.cardEffects)
         {
-            cardEffect.Evaluate(card);
+            foreach(CardEffect cf in cardEffect.effects)
+                cf.Evaluate(card);
         }
     }
 

@@ -9,25 +9,9 @@ public class Card : ScriptableObject
     public string cardName;
     public int damage;
     public InfantryType infantryType;
-    [SerializeReference] public List<CardEffect> cardEffects = new List<CardEffect>();
+    public List<CardEffect1> cardEffects = new List<CardEffect1>();
 
-    [ContextMenu("Add Light Attack Effect")]
-    public void AddLightAttackEffect()
-    {
-        cardEffects.Add(new LightAttackCardEffect());
-    }
-
-    [ContextMenu("Add Heavy Attack Effect")]
-    public void AddHeavyAttackEffect()
-    {
-        cardEffects.Add(new HeavyAttackCardEffect());
-
-
-        if(infantryType.HasFlag(InfantryType.A_TEAM))
-        {
-
-        }
-    }
+   
 
 
 }

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [Serializable]
-public class CardEffect
+public abstract class CardEffect
 {
 
    public string Description;
