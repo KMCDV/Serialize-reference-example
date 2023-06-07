@@ -8,6 +8,7 @@ public abstract class CardEffect
 {
 
    public string Description;
+    public TurnTiming TurnTiming;
    
     public CardEffect()
     {
